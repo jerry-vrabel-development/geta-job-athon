@@ -1,52 +1,39 @@
 import "../App.css";
-import { motion } from "framer-motion";
 import TwitchStream from "./TwitchStream";
 import Donate from "./Donate";
 
-const routeVariants = {
-  initial: {
-    y: "100vh",
-  },
-  final: {
-    y: "0vh",
-    transition: {
-      type: "spring",
-      mass: 0.4,
-    },
-  },
-};
-
-const childVariants = {
-  initial: {
-    opacity: 0,
-    y: "50px",
-  },
-  final: {
-    opacity: 1,
-    y: "0px",
-    transition: {
-      duration: 0.5,
-      delay: 0.5,
-    },
-  },
-};
-
 function Home() {
   return (
-    <div>
-      <motion.div
-        className="home component"
-        variants={routeVariants}
-        initial="initial"
-        animate="final"
-      >
-        <motion.h1 variants={childVariants} initial="initial" animate="final">Home Component</motion.h1>
-      </motion.div>
+    <div className='home'>
       <section>
         <TwitchStream />
         <div className="card">
-          <p className="">
-            Who
+          <p className="who">
+            My name is Jerry Vrabel and I am hosting a streaming event on January 30th in the hopes of raising visibility of my skills, and talents in the goal of finding gainful employment. A bit of digital buskering, if you will.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div className="card">
+          <p className="what">
+            A streaming event featuring live performances from TBD with a live studio audience
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div className="card">
+          <p className="where">
+            Where: Hosted at the Forwardslash Development Studio located in Rogers Park Chicago
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div className="card">
+          <p className="when">
+            Starts: January 30th, 4pm - til donation goals raised
           </p>
         </div>
       </section>
@@ -54,31 +41,7 @@ function Home() {
       <section>
         <div className="card">
           <p className="">
-            What
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <div className="card">
-          <p className="">
-            Where
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <div className="card">
-          <p className="">
-            Why
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <div className="card">
-          <p className="">
-            Donate
+            Please Donate
           </p>
           <Donate />
         </div>

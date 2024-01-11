@@ -1,5 +1,6 @@
 import "../App.css";
 import { motion } from "framer-motion";
+import TwitchStream from "./TwitchStream";
 
 const iframeUrl = 'https://ko-fi.com/getajobathon/?hidefeed=true&widget=true&embed=true&preview=true'
 
@@ -43,6 +44,7 @@ function Home() {
         <motion.h1 variants={childVariants} initial="initial" animate="final">Home Component</motion.h1>
       </motion.div>
       <section>
+        <TwitchStream />
         <div className="card">
           <p className="">
             Who
@@ -83,6 +85,7 @@ function Home() {
             id='kofiframe'
             src={iframeUrl}
             height='512'
+            width='800'
             title='get a job a thon'>
           </iframe>
         </div>

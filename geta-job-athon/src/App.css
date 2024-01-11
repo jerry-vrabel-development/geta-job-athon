@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
-  background: rgb(142, 160, 205);
+  background: rgb(255, 190, 152);
 }
 
 header > .header__left {
@@ -62,4 +62,9 @@ header > .header__left {
   background: transparent;
   color: none;
   text-decoration: none;
+}
+.home {
+  background-color: #004167;
+  color: #ffbe98;
+  padding-top: .5%;
 }

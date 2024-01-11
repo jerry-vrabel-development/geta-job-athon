@@ -1,48 +1,38 @@
 import './App.css'
+import { useScrollToTop } from "./components/useScrollToTop";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Header from './components/Header'
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
-function App() {
+function LocationProvider({ children }) {  return <AnimatePresence>{ children }</AnimatePresence>; }
+
+function RoutesWithAnimation() {
+  useScrollToTop();
+  const location = useLocation();
 
   return (
-    <>
-      <header>Get a Job a Thon</header>
-      <nav></nav>
-      <section>
-        <div className="card">
-          <p className="read-the-docs">
-Who
-          </p>
-      </div>
-      </section>
-      <section>
-        <div className="card">
-          <p className="read-the-docs">
-What
-          </p>
-      </div>
-      </section>
-      <section>
-        <div className="card">
-          <p className="read-the-docs">
-Where
-          </p>
-      </div>
-      </section>
-      <section>
-        <div className="card">
-          <p className="read-the-docs">
-Why
-          </p>
-      </div>
-      </section>
-      <section>
-        <div className="card">
-          <p className="read-the-docs">
-Donate
-          </p>
-      </div>
-      </section>
+    <Routes location={location} key={location.key}>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <LocationProvider>
+          <RoutesWithAnimation />
+        </LocationProvider>
+      </BrowserRouter>
       <footer></footer>
-      </>
+      </div>
   )
 }
 

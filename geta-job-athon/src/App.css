@@ -31,7 +31,11 @@ header > .header__left {
 .header__center {
   position: absolute;
   margin-left: 50px;
-  color: #ff0000
+}
+
+.header__center a {
+ color: #ff0000;
+ font-size: 2.5rem;
 }
 
 .header__right {
@@ -45,22 +49,23 @@ header > .header__left {
 .header ul {
   display: flex;
   gap: 20px;
+  background: #004167;
 }
 
 .header ul a {
   text-decoration: none;
-  border: 1.5px solid #555;
   padding: 5px 10px;
-  color: #333;
 }
 
 .star {
+  color: #ff0000;
 }
+
 .active {
-  color: #007bff;
-  background: rgb(167,168,205) ;
+  background: rgb(255,0,0) ;
   text-decoration: none;
 }
+
 .nav-list {
   list-style-type: none;
 }
@@ -70,7 +75,20 @@ header > .header__left {
   color: none;
   text-decoration: none;
 }
+
 .home {
+  background-color: #004167;
+  color: #ffbe98;
+  padding-top: .5%;
+}
+
+.about {
+  background-color: #004167;
+  color: #ffbe98;
+  padding-top: .5%;
+}
+
+.contact {
   background-color: #004167;
   color: #ffbe98;
   padding-top: .5%;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
 #root {
   max-width: 100vw;
   margin: 0 auto;
@@ -13,18 +14,24 @@ body {
 
 .header {
   width: 100vw;
-  padding: 0 2rem;
+  padding: 0 1rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
-  background: rgb(142, 160, 205);
+  background: rgb(255, 190, 152);
 }
 
 header > .header__left {
   width: 50%;
   font-size: 1.5rem;
+}
+
+.header__center {
+  position: absolute;
+  margin-left: 50px;
+  color: #ff0000
 }
 
 .header__right {
@@ -62,4 +69,9 @@ header > .header__left {
   background: transparent;
   color: none;
   text-decoration: none;
+}
+.home {
+  background-color: #004167;
+  color: #ffbe98;
+  padding-top: .5%;
 }

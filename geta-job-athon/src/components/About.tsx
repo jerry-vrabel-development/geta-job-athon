@@ -31,16 +31,20 @@ const childVariants = {
 
 function About() {
   return (
-    <motion.div
+    <div className="about">
+      <section>
+        <motion.div
       className="about component"
-      variants={routeVariants}
-      initial="initial"
-      animate="final"
-    >
+          variants={routeVariants}
+          initial="initial"
+          animate="final"
+        >
       
-      <motion.h1 variants={childVariants} initial="initial" animate="final">About Component</motion.h1>
-    </motion.div>
-    
+          <motion.h1 variants={childVariants} initial="initial" animate="final">About Component</motion.h1>
+        </motion.div>
+      </section>
+
+    </div>
   );
 }
 

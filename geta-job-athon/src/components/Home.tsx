@@ -17,7 +17,7 @@ function Home() {
       <section>
         <div className="card">
           <p className="what">
-            A streaming event featuring live performances from TBD with a live studio audience
+            What is this about: A streaming event to feature live performances from TBD artists with a live studio audience. There will be games, segments and fun fun fun.
           </p>
         </div>
       </section>

@@ -7,8 +7,7 @@ function TwitchStream() {
         src={iframeUrl}
         height="378"
         width="620"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"
-        sandbox='allow-scripts allow-modal'
+        allow="picture-in-picture full"
         loading='eager'
       >
 

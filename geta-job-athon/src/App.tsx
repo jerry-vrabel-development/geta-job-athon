@@ -31,7 +31,7 @@ function App() {
           <RoutesWithAnimation />
         </LocationProvider>
       </BrowserRouter>
-      <footer></footer>
+      <footer>Jerry Vrabel Development</footer>
       </div>
   )
 }

@@ -1,8 +1,7 @@
 import "../App.css";
 import { motion } from "framer-motion";
 import TwitchStream from "./TwitchStream";
-
-const iframeUrl = 'https://ko-fi.com/getajobathon/?hidefeed=true&widget=true&embed=true&preview=true'
+import Donate from "./Donate";
 
 const routeVariants = {
   initial: {
@@ -81,13 +80,7 @@ function Home() {
           <p className="">
             Donate
           </p>
-          <iframe
-            id='kofiframe'
-            src={iframeUrl}
-            height='512'
-            width='800'
-            title='get a job a thon'>
-          </iframe>
+          <Donate />
         </div>
       </section>
     </div>

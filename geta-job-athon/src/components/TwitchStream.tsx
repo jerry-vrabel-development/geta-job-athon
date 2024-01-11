@@ -7,7 +7,7 @@ function TwitchStream() {
         src={iframeUrl}
         height="378"
         width="620"
-        allow="picture-in-picture full"
+        allowFullScreen={true}
         loading='eager'
       >
 

@@ -93,3 +93,8 @@ header > .header__left {
   color: #ffbe98;
   padding-top: .5%;
 }
+
+.footer {
+    font-size: .75em;
+    color: #cccccc
+}

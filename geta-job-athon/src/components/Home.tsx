@@ -9,7 +9,7 @@ function Home() {
       <section>
         <div className="card">
           <p className="what">
-            The What: A streaming event on January 30th in the hopes of raising visibility of my skills, and talents in the goal of finding gainful employment. A bit of digital buskering, if you will. A streaming event to feature live performances from TBD artists with a live studio audience. There will be games, segments and fun fun fun.
+            The What: A streaming event on January 30th in the hopes of raising visibility of my skills and talents in the goal of finding gainful employment. A bit of digital buskering, if you will. A streaming event to feature live performances from TBD artists with a live studio audience. There will be games, segments and fun fun fun.
           </p>
         </div>
       </section>

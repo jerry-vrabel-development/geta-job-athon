@@ -6,7 +6,7 @@ function Donate() {
       <iframe
         id='kofiframe'
         src={iframeUrl}
-        title='get a job a thon'>
+        title='get-a-job-a-thon'>
       </iframe>
     </div>
   )

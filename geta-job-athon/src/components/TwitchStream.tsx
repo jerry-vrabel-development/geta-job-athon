@@ -2,11 +2,9 @@ const iframeUrl = "https://player.twitch.tv/?channel=10jv01&parent=geta-job-atho
 
 function TwitchStream() {
   return (
-    <div>
+    <div className="iframe-container">
       <iframe
         src={iframeUrl}
-        height="378"
-        width="620"
         allowFullScreen={true}
         loading='eager'
       >

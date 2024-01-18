@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -7,8 +8,26 @@ const menuItemVariants = {
 };
 
 const Nav = () => {
+    // State to toggle the mobile menu
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Function to toggle the mobile menu
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <motion.ul initial="hidden" className="nav-list"animate="visible">
+    <div className="nav-container">
+      <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+        {/* Add a menu icon here */}
+        <div className="menu-bar"></div>
+        <div className="menu-bar"></div>
+        <div className="menu-bar"></div>
+      </div>
+      <motion.ul
+        initial="hidden"
+        className={`nav-list ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}
+        animate="visible">
         <motion.li
           variants={menuItemVariants}
           whileHover={{ scale: 1.1 }}
@@ -36,7 +55,8 @@ const Nav = () => {
             Contact
           </NavLink>
         </motion.li>
-    </motion.ul>
+      </motion.ul>
+      </div>
   );
 };
 

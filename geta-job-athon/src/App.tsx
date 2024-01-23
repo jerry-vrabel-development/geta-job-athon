@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from './components/Footer';
 
 function LocationProvider({ children }) {  return <AnimatePresence>{ children }</AnimatePresence>; }
 
@@ -31,7 +32,7 @@ function App() {
           <RoutesWithAnimation />
         </LocationProvider>
       </BrowserRouter>
-      <footer className='footer'>Jerry Vrabel Development</footer>
+      <Footer />
       </div>
   )
 }

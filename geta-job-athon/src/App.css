@@ -20,6 +20,11 @@ body {
   box-sizing: border-box;
 }
 
+.text-content {
+  padding: 0.25em;
+  color: #336699;
+}
+
 .header {
   padding: 0 rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);

@@ -2,12 +2,15 @@ const iframeUrl = 'https://ko-fi.com/getajobathon/?hidefeed=true&widget=true&emb
 
 function Donate() {
   return (
-    <div className="iframe-container">
-      <iframe
-        id='kofiframe'
-        src={iframeUrl}
-        title='get-a-job-a-thon'>
-      </iframe>
+    <div className="donate-section">
+      <div className="iframe-container">
+        <iframe
+          id='kofiframe'
+          src={iframeUrl}
+          title='get-a-job-a-thon'
+        >
+        </iframe>
+      </div>
     </div>
   )
 }

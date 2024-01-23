@@ -1,5 +1,10 @@
 # Hi Viewers
-<!-- This app is actively being built. Repo @ ==> https://github.com/jerry-vrabel-development/geta-job-athon -->
+<!-- This app is "actively" being built. 
+  Repo @ ==> https://github.com/jerry-vrabel-development/geta-job-athon
+  Twitch@==> https://www.twitch.tv/10jv01
+  Link @ ==> https://geta-job-athon.vercel.app/
+  Donate@==> https://ko-fi.com/getajobathon
+ -->
 
 Feel free to say "Hi" by sending a chat... or donate. Cause this dev is jobless.  
 All donations are incredibly appreciated (and unfortunately needed)

@@ -12,7 +12,7 @@ function Home() {
             <div className="card-title">The Who</div>
             <div className="card-content">
               <p className="text-content">
-                The who is I, Jerry Vrabel.  I am a 55 year old web application programmer. I live with my dog, Bash in the Chicago neighborhood of Rogers Park.
+                The who is I, Jerry Vrabel.  I am a 55 year old web application programmer. I live with my dog, Bash in the Rogers Park neighborhood of Chicago.
               </p>
             </div>
         </div>

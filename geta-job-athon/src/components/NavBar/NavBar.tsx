@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom"
 import './NavBar.css'; // Ensure the path is correct
 
 const NavBar: React.FC = () => {
@@ -17,9 +18,9 @@ const NavBar: React.FC = () => {
       </button>
       <div className={`main-nav ${isOpen ? 'active' : ''}`}>
       <ul>
-          <li><a href="/" className="nav-links">Home</a></li>
-          <li><a href="/about" className="nav-links">About</a></li>
-          <li><a href="/contact" className="nav-links">Contact</a></li>
+          <li><Link to="/" className="nav-links">Home</Link></li>
+          <li><Link to="/about" className="nav-links">About</Link></li>
+          <li><Link to="/contact" className="nav-links">Contact</Link></li>
         </ul>
       </div>
     </nav>

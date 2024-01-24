@@ -1,0 +1,69 @@
+.navbar {
+  position: relative;
+  z-index: 1000;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: rgb(255, 190, 152);
+  color: white;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px; /* Adjust size as needed */
+  width: 30px; /* Adjust size as needed */
+  padding: 0;
+}
+
+.hamburger-icon {
+  display: block;
+  width: 100%;
+  height: 2px; /* Adjust thickness as needed */
+  background-color: white; /* Adjust color as needed */
+}
+
+/* Default styles for main-nav (used for smaller screens) */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+  .main-nav {
+  display: none;
+  }
+  .main-nav.active {
+  display: block;
+  }
+}
+
+/* Adjust main-nav for larger screens */
+@media (min-width: 769px) {
+  .main-nav {
+    display: flex; /* Show the nav items in a row */
+    align-items: center;
+    justify-content;
+    flex-grow: 1 
+    /* Additional styling for larger screen nav items */
+  }
+  .main-nav ul {
+    display: flex;
+  }
+  .main-nav li {
+    margin-bottom: 0; /* Reset margin for horizontal layout */
+    margin-right: 20px; /* Spacing between items */
+    list-style-type: none;
+  }
+  .main-nav li:last-child {
+    margin-right: 0; /* No margin for the last item */
+  }
+  .main-nav li a {
+    color: white; /* Adjust as needed */
+    text-decoration: none;
+  }
+}

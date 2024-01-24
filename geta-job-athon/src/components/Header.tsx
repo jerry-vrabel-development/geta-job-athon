@@ -1,6 +1,5 @@
 import "../App.css";
-import Nav from "./Nav";
-import Star from "./Star";
+import NavBar from "./NavBar/NavBar";
 
 function Header() {
  
@@ -8,10 +7,10 @@ function Header() {
     <header>
       <div className="header">
         <div className="header__left">
-          <Star />
+        <NavBar />
         </div>
         <div className="header__right">
-          <Nav />
+
         </div>
       </div>
     </header>

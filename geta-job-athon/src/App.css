@@ -48,17 +48,6 @@ header > .header__left {
   margin-right: 50px;
 }
 
-.header ul {
-  display: flex;
-  gap: 20px;
-  background: #004167;
-}
-
-.header ul a {
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
 .star {
   color: #ff0000;
 }
@@ -66,10 +55,6 @@ header > .header__left {
 .active {
   background: rgb(255,0,0) ;
   text-decoration: none;
-}
-
-.nav-list {
-  list-style-type: none;
 }
 
 .logo .active {

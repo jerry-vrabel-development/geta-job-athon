@@ -29,23 +29,14 @@ body {
   padding: 0 rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: rgb(255, 190, 152);
 }
-
-header > .header__left {
-  width: 50%;
-  font-size: 1.5rem;
+.header__left {
+  padding-top: 10px;
+  padding-left: 6px;
 }
-
-.header__center {
-  position: absolute;
-  margin-left: 50px;
-}
-
 .header__right {
-  margin-right: 50px;
+  padding-top: 2px;
 }
 
 .star {
@@ -53,7 +44,6 @@ header > .header__left {
 }
 
 .active {
-  background: rgb(255,0,0) ;
   text-decoration: none;
 }
 

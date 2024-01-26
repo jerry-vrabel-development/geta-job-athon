@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(255, 190, 152);
   color: white;
 }
 
@@ -39,17 +38,18 @@
   .main-nav.active {
   display: block;
   position: absolute;
-  margin-top: 140px;
-  margin-left: 7px;
+  margin-left: 1em;
   padding-left: .5em;
   padding-right: .5em;
   }
   .main-nav li {
     list-style-type: none;
-    text-align: left;
     width: max-content;
     display: table-cell;
+    padding-left: .5em;
+    padding-right: .5em;
   }
+  .main-nav li a {color: #004167; }
   .main-nav ul {
     padding: inherit;
   }
@@ -80,7 +80,7 @@
     margin-right: 0; /* No margin for the last item */
   }
   .main-nav li a {
-    color: white; /* Adjust as needed */
+    color: #004167; /* Adjust as needed */
     text-decoration: none;
   }
   .menu-text {

@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
-import  star from "../assets/chi6star.png"
+import star from "../assets/chi6star.png"
+import { Link } from "react-router-dom";
 
 function Star() {
   return (
@@ -13,7 +14,9 @@ function Star() {
     initial={{ opacity: 0, scale: .1 }}
     whileHover={{ scale: .5 }}
     >
-<img src={star} alt="Jerry Vrabel Development" />
+      <Link to='/'>
+        <img src={star} alt="Jerry Vrabel Development" />
+      </Link>
     </motion.div>
   ); 
 }
